@@ -22,14 +22,15 @@ spec:
         type: openapi
         location: 
           path: "/api-docs"
-        owner: OWNER_VAL
-        system: SYSTEM_VAL
-        description: DESCRIPTION_VAL
+        owner: default-team
+        system: java-rest
+        description: Tanzu-java-rest-service
   source:
     git:
-      url: <https URL for your generated project's Git repository>
+      url: https://github.com/jricho/application-accelerator-samples
       ref:
         branch: main
+    subPath: java-rest-service
   serviceClaims:
     - name: database
       ref:
