@@ -29,6 +29,8 @@ spec:
       value: ssh://git@github.com:jricho/tap-gitops.git
     - name: gitops_branch
       value: rest-service-db
+    - name: gitops_ssh_secret
+      value: git-ssh
   source:
     git:
       url: https://github.com/jricho/application-accelerator-samples
