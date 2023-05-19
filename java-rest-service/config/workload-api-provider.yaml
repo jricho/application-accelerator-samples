@@ -27,16 +27,8 @@ spec:
         description: Tanzu-java-rest-service
     - name: gitops_repository
       value: ssh://git@github.com:jricho/tap-gitops.git
-    - name: gitops_ssh_secret
-      value: git-ssh
     - name: gitops_branch
-      value: main
-    - name: gitops_commit_message
-      value: ci bump    
-    - name: gitops_user_name
-      value: test
-    - name: gitops_user_email
-      value: test@vmware.com   
+      value: rest-service-db
   source:
     git:
       url: https://github.com/jricho/application-accelerator-samples
