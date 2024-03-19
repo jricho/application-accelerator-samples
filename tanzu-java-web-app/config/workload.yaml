@@ -13,6 +13,9 @@ spec:
       - name: BP_JVM_VERSION
         value: "11"
   params:
+  - name: testing_pipeline_matching_labels
+    value:
+      apps.tanzu.vmware.com/pipeline: developer-defined-tekton-pipeline
   - name: annotations
     value:
       autoscaling.knative.dev/minScale: "1"
